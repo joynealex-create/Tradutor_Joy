@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor Dev.Jooy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tradutor Dev.Jooy</h1>
+
+    <div class="caixa-maior">
+
+        <textarea class="input-texto" placeholder="Digite o texto aqui..."></textarea>
+
+        <div class="controle">
+            <select id="idioma">
+                <option value="en|pt">Inglês para Português</option>
+                <option value="pt|en">Português para Inglês</option>
+                <option value="en|es">Inglês para Espanhol</option>
+                <option value="es|en">Espanhol para Inglês</option>
+                <option value="pt|es">Português para Espanhol</option>
+                <option value="es|pt">Espanhol para Português</option>
+            </select>
+
+            <button onclick="traduzir()">
+                <img src="imagens/globe.svg" alt="Ícone de tradução">
+            </button>
+
+            <button onclick="ouvirVoz()">
+                <img src="imagens/mic.svg" alt="Ícone de microfone">
+            </button>
+
+            <button onclick="limpar()">
+                <img src="imagens/trash.svg" alt="Ícone de limpar">
+            </button>
+        </div>
+
+        <div class="resultado">
+            <h3>Texto Traduzido:</h3>
+            <p class="traducao">A tradução aparecerá aqui</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
